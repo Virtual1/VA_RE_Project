@@ -149,3 +149,8 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'WeWorkGermiston@gmail.com'
 EMAIL_HOST_PASSWORD = 'VA_W3W0rk)(*'
 EMAIL_USE_TLS = True
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
